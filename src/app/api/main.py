@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from src.app.core.config import get_settings
 from src.app.agents.orchestrator import run_agent
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 app = FastAPI(title="GenAI Agentic API")
 settings = get_settings()
